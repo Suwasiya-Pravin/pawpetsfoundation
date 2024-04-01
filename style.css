@@ -474,6 +474,8 @@ html{
 #contact-us {
     padding: 50px 0;
     text-align: center;
+    background-color: #985425;
+    color: white;
 }
 
 .contact-details {
