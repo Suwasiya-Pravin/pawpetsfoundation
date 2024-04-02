@@ -243,10 +243,13 @@ html{
     text-align: center;
 
 }
+
+#hero .hero-content p{
+    text-align: center;
+}
 p{
     text-align: start;
 }
-
 .hero-content {
     max-width: 800px;
     padding: 20px;
@@ -261,6 +264,7 @@ p{
 
 .hero-content p {
     font-size: 18px;
+    text-align: center;
 }
 
 #our-story {
@@ -375,6 +379,7 @@ p{
     color: red;
     font-size: 12px;
     margin-top: 10px;
+    text-align: center;
 }
 
 .btn-donate {
