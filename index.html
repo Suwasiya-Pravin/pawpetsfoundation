@@ -11,6 +11,12 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="logo.png"
+      style="background: white" />
   </head>
   <body>
     <nav class="nav">
@@ -39,7 +45,11 @@
     </nav>
     <div>
       <section id="hero">
-        <div class="hero-content">
+        <div
+          class="hero-content"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1500">
           <h1>Welcome to Paw Pets Foundation</h1>
           <p>Rescuing, feeding, sheltering, and adopting stray animals</p>
         </div>
@@ -47,7 +57,11 @@
       <section id="our-story">
         <div class="story-content">
           <h2>Our Story</h2>
-          <div class="story-text">
+          <div
+            class="story-text"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1500">
             <p>
               Paw Pets Foundation was established with a vision to make a
               difference in the lives of stray animals. Since our inception, we
@@ -64,22 +78,53 @@
           </div>
         </div>
       </section>
-
+      <section class="counter-container">
+        <div class="counter-child">
+          <div class="counter" id="rescue-counter">0</div>
+          <h1>Rescuing</h1>
+        </div>
+        <div class="counter-child">
+          <div class="counter" id="feed-counter">0</div>
+          <h1>Feed counter</h1>
+        </div>
+        <div class="counter-child">
+          <div class="counter" id="shelter-counter">0</div>
+          <h1>shelter </h1>
+        </div>
+        <div class="counter-child">
+          <div class="counter" id="adopt-counter">0</div>
+          <h1>adopt</h1>
+        </div>
+      </section>
       <section id="our-team">
         <h1>Meet Our Team</h1>
         <div class="team-container">
-          <div class="team-member">
+          <div
+            class="team-member"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1500">
             <img src="person.jpeg" alt="Team Member 1" />
             <h3>Team Member 1</h3>
             <p>Role: Veterinarian</p>
           </div>
-          <div class="team-member">
+          <div
+            class="team-member"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1500">
             <img src="person.jpeg" alt="Team Member 2" />
             <h3>Team Member 2</h3>
             <p>Role: Animal Caretaker</p>
           </div>
-          <div id="team" class="team-member">
-            <img src="person.jpeg" alt="Team Member 2" />
+          <div
+            id="team"
+            class="team-member"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1500">
+            <img src="person.jpeg" alt="Team Member data-aos="fade-up"
+            data-aos-delay="100" data-aos-duration="1500"2" />
             <h3>Team Member 2</h3>
             <p>Role: Animal Caretaker</p>
           </div>
@@ -106,45 +151,54 @@
       <section class="meet-pets">
         <h1>Meet Our cats and dogs</h1>
         <div class="wrapper">
-          <div class="card">
+          <div
+            class="card">
             <img
               src="https://javasea.ru/uploads/posts/2012-02/1329571324_vzglyad-koshki.jpg"
               alt="image url" />
             <div class="overlay">
               <h1 class="text-h1">Hope</h1>
               <p class="text-p">
-                Hope is a bundle of joy, always wagging her tail and spreading happiness wherever she goes.</p>
+                Hope is a bundle of joy, always wagging her tail and spreading
+                happiness wherever she goes.
+              </p>
             </div>
           </div>
-          <div class="card">
+          <div
+            class="card"
+>
             <img
               src="https://bipbap.ru/wp-content/uploads/2017/04/000000843.jpg"
               alt="image url" />
             <div class="overlay">
               <h1 class="text-h1">Bella</h1>
               <p class="text-p">
-                Bella is a playful and affectionate dog who loves belly rubs and long walks in the park.</p>
+                Bella is a playful and affectionate dog who loves belly rubs and
+                long walks in the park.
+              </p>
             </div>
           </div>
-  
-          <div class="card">
+
+          <div
+            class="card">
             <img
               src="https://st2.depositphotos.com/4285045/7260/i/450/depositphotos_72609979-stock-photo-ojos-de-gata.jpg"
               alt="image url" />
             <div class="overlay">
               <h1 class="text-h1">Max</h1>
               <p class="text-p">
-                Max is a loyal and energetic companion who enjoys fetch and cuddle sessions on the couch.</p>
+                Max is a loyal and energetic companion who enjoys fetch and
+                cuddle sessions on the couch.
+              </p>
             </div>
           </div>
-
         </div>
       </section>
 
       <section id="mission-pawsible">
         <div class="mission-content">
           <h2>Mission-Pawsible</h2>
-          <p>
+          <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
             Paw Pets Foundation's mission is to rescue, feed, shelter, and adopt
             stray animals. We provide vaccinations, neutering, and medical
             treatment for injured animals. Our goal is to give dignified last
@@ -185,6 +239,10 @@
       </section>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -9,3 +9,50 @@ mediaButton.onclick = function () {
     mediaButton.classList.toggle("active");
     
 };
+
+
+function startCounters() {
+    const rescueCounter = document.getElementById('rescue-counter');
+    const feedCounter = document.getElementById('feed-counter');
+    const shelterCounter = document.getElementById('shelter-counter');
+    const adoptCounter = document.getElementById('adopt-counter');
+
+    const targetRescue = 500;
+    const targetFeed = 1000;
+    const targetShelter = 750;
+    const targetAdopt = 200;
+
+    let currentRescue = 0;
+    let currentFeed = 0;
+    let currentShelter = 0;
+    let currentAdopt = 0;
+
+    const interval = setInterval(() => {
+        if (currentRescue < targetRescue) {
+            currentRescue++;
+            rescueCounter.textContent = currentRescue+"+";
+        }
+
+        if (currentFeed < targetFeed) {
+            currentFeed++;
+            feedCounter.textContent = currentFeed+"+";
+        }
+
+        if (currentShelter < targetShelter) {
+            currentShelter++;
+            shelterCounter.textContent = currentShelter+"+";
+        }
+
+        if (currentAdopt < targetAdopt) {
+            currentAdopt++;
+            adoptCounter.textContent = currentAdopt+"+";
+        }
+
+        if (currentRescue === targetRescue && currentFeed === targetFeed && currentShelter === targetShelter && currentAdopt === targetAdopt) {
+            clearInterval(interval);
+        }
+    }, 10);
+}
+
+startCounters();
++"+"
