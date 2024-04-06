@@ -153,13 +153,13 @@ html{
     margin: 0;
 }
 
-/* .nav div.media_button button.active:hover span:nth-of-type(1) {
-    transform: rotate3d(0, 0, 1, 20deg);
+.nav div.media_button button.active:hover span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 45deg);
 }
 
 .nav div.media_button button.active:hover span:nth-of-type(3) {
-    transform: rotate3d(0, 0, 1, -20deg);
-} */
+    transform: rotate3d(0, 0, 1, -45deg);
+}
 
 /* Home section */
 
