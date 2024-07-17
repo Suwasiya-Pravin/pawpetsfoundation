@@ -580,7 +580,7 @@ p{
 	transition: 0.5s ease-in-out;
     border-radius: 8px;
     overflow: hidden;
-    margin:15px 5px;
+    margin:15px;
 }
 
 .card:hover {
