@@ -249,13 +249,17 @@ html{
     background-color: #985525d2;
     overflow: hidden;
 }
+.main{
+    color:#985525d2
+}
 #hero img{
     object-fit: fill;
     position: absolute;
-    filter: brightness(50%);
+    filter: brightness(45%);
     z-index: 1;
     /* border-radius: 50%; */
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);}
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
 
 #hero .hero-content p{
     text-align: center;
@@ -391,6 +395,7 @@ p{
     max-width: 320px;
     border-radius: 8px;
     overflow: hidden;
+    background-color: #ffff;
 }
 
 .team-member img {
@@ -398,13 +403,18 @@ p{
     width: 100%;
     border-radius: 8px;
 }
-
-.team-member h3 {
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.team-member div h3 {
     font-size: 20px;
     margin-bottom: 5px;
 }
 
-.team-member p {
+.team-member div p {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -527,16 +537,12 @@ p{
     margin-right: 10px;
 }
 
-.social-media {
-    display: flex;
-    justify-content: center;
+.address {
+    flex-direction: row;
+    gap: 14px;
 }
-
-.social-link {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 24px;
-    color: white;
+.address i{
+    font-size: 25px;
 }
 .meet-pets{
     display: flex;
@@ -547,7 +553,7 @@ p{
 }
 .meet-pets h1{
     font-size: 40px;
-    margin-bottom: 39px;
+    margin: 36px 0;
     text-align: center;
 }
 .meet-pets::-webkit-scrollbar {
@@ -560,14 +566,12 @@ p{
     align-items: center;
     margin-bottom: 30px;
     flex-wrap: wrap;
-    overflow-x: hidden;
 }
 
 .card {
 	position: relative;
 	width: 300px;
 	height: 370px;
-    margin-bottom: 40px;
 	display: flex;
 	align-items: flex-end;
 	padding: 2rem 1rem;
@@ -576,6 +580,7 @@ p{
 	transition: 0.5s ease-in-out;
     border-radius: 8px;
     overflow: hidden;
+    margin:15px 5px;
 }
 
 .card:hover {
